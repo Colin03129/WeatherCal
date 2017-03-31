@@ -1,0 +1,95 @@
+body {
+    background-color: #505050;
+    background-color: black;
+    color: white;
+    font-family: "Helvetica", sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+}
+
+.HeadTable {
+    border-bottom: solid 2px black;
+}
+
+.LastHour {
+    border-bottom: solid 2px #f00;
+}
+
+
+.LowRain {
+    color:lightgreen;
+    font-size: 1.4em;
+}
+
+.MedRain {
+    color: #48F748; 
+    font-size: 1.4em;
+}
+
+.HighRain {
+    color: green;
+    font-size: 1.4em;
+}
+
+/* Below 31 F */
+.FreezeTemp {
+    color: purple;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px lightblue;
+}
+
+/* 31 to 40 F */
+.LowestTemp {
+    color: blue;
+    font-size: 1.4em;
+}
+
+/* 41 to 50 F */
+.LowerTemp {
+    color: #576CF3;
+    font-size: 1.4em;
+}
+
+/* 51 to 60 F */
+.LowTemp {
+    color: lightblue;
+    font-size: 1.4em;
+}
+
+/* 61 to 70 F */
+.MedTemp {
+    color: lightyellow;
+    font-size: 1.4em;
+}
+
+/* 71 to 80 F */
+.HighTemp {
+    color: #ffc3c3;
+    font-size: 1.4em;
+}
+
+/* 81 to 90 F */
+.HigherTemp {
+    color: #ff6161;
+    font-size: 1.4em;
+}
+
+/* 91 to 100 F */
+.HighestTemp {
+    color: #ff1212;
+    font-size: 1.4em;
+}
+
+/* above 100 F */
+.BurnTemp {
+    color: #c50000;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px yellow;
+}
+
