@@ -29,7 +29,7 @@ WeatherChange.scpt
   
   
 WeatherCalHTMLconstructor.scpt
-  --Creates an HTML page with a table containing columns for the hour, event, temperature, and probability of precipitation. Uses the text files created by CalendarEventsPull.scpt and WeatherChange.scpt to complete the cells. The formatting for the HTML file is done by WeatherCal.css or WeatherCal2.css. The settings for the geeklet are as follows:
+  --Creates an HTML page with a table containing columns for the hour, event, temperature, and probability of precipitation. Uses the text files created by CalendarEventsPull.scpt and WeatherChange.scpt to complete the cells. The formatting for the HTML file is done by WeatherCal.css or WeatherCal2.css. The settings for the html geeklet that displays the constructed html page are as follows:
     --URL: file:///Users/<YOURUSERNAME>/Documents/GeekTool/calWeatherInfo.html
     --Refresh text box: 60
     --Zoom: 84   You can change this to whatever you want. The HTML will adjust accordingly
@@ -51,6 +51,44 @@ BackgroundWeatherChange.scpt
   
   
 ## Setup
-1. Make a new folder named GeekTool in your documents folder if one does not exist already
-2. Make another new folder within the GeekTool folder named Weather. This will store all the background images.
-3. ...Will be continued within the next hour...
+1. Download this repository as a zip file into your documents folder. Double-click the zip file to extract the contents.
+2. Rename the new folder "WeatherCal-master" to "GeekTool". If you already have a folder in documents called "GeekTool", move all the contents of "WeatherCal-master" into the "GeekTool" folder.
+3. Install GeekTool from https://www.tynsoe.org/v2/geektool/ if you don't have it already
+4. Install JSON Helper from http://www.mousedown.net/mouseware/JSONHelper.html if you don't have it already
+5. Get a free Weather Underground API key from https://www.wunderground.com/weather/api/d/pricing.html if you don't have one already
+6. Open WeatherChange.scpt in the Script Editor application. Search for "set WURL to" in the script. In between "api/" and "/hourly10day" replace the placeholder text with your api key. At the end of the same line, replace "KCAARCAT10" with the weather underground station id for your local station. The id should be at the end of the URL of your local station. Not all stations have this id.
+7. Setup a shell geeklet that runs WeatherCalMain.scpt. See the above portion on the script to see the setup for the geeklet. You can move this geeklet so that the top (and the return message) will not be visible on the screen.
+8. Setup a html geeklet that displays the HTML page that is created. See the above portion on WeatherCalHTMLconstructor.scpt to see the setup for the geeklet.
+9. Make sure that the geektool group the geeklets are inside of are enabled and set geektool to enable.
+10. If you have an issue with the setup, see troubleshooting below.
+11. If you think the setup instructions should be altered or are missing some explanation, see contact information at the end of troubleshooting below.
+
+Additional Optional Steps:
+  --If you do not want weather-based background and would rather have your own backgrounds:
+    1. Open WeatherCalHTMLconstructor.scpt in the Script Editor application.
+    2. Search for "Background to true". Read the notes next to each of the declarations and change whichever one to "false"
+    3. If you left addBackground to true and set addWeatherToBackground to false, you will need a folder named "Background" containing all of the images you would like displayed along with the calendar. If there is only one image, it will always be displayed. If you add multiple images into the folder, it will randomly rotate between them. The images CAN NOT be ALIASES.'
+    
+  --If you want the calendar displayed on the left side of the screen instead of the right but still have a background along with it:
+    1. Open WeatherCal.css in the TextEdit application.
+    2. The third line after "table {" should say "right: 8px;". Change the "right" to "left". Save the file.
+
+Troubleshooting:
+  1. If you do not see the background/calendar appearing on your background, try opening the html page into a web browser such as Safari or Chrome. You should do this by copy-pasting the URL from the geeklet directly into your browser. If your browser displays the background, move to step 2. If it does not, move to step 3.
+  2.
+    a) Double check that your geeklet settings are the same as the settings in this readme.
+    b) Check that the geeklets are in a GeekTool group and that GeekTool group is enabled.
+    c) Check that geektool is enabled and not just open
+    d) If you still have issues, see my contact info below
+  3. Open the Script Editor application
+    a) Run WeatherChange.scpt with the log enabled (command 3) and look for any errors in the log
+    b) Run CalendarEventsPull.scpt with the log enabled and look for any errors in the log
+    c) Run WeatherCalHTMLconstructor.scpt with the log enabled and look for any errors in the log
+    d) Run WeatherCalMain.scpt with the log enabled and look for any errors in the log. Note that the refresh rate of WeatherCalMain.scpt is not the same as the shell geeklet. If you want the HTML page to update instantly, run WeatherCalHTMLconstructor.scpt instead of WeatherCalMain.scpt and open the HTML file in a web browser.
+    e) If you still have issues, see my contact info below
+
+Contact Info:
+The best way to contact me is through reddit at /u/Colin03129. You can either comment on this post: https://np.reddit.com/r/GeekTool/comments/65kx28/finished_my_backgroundchanging_weathercalendar/ or send me a message directly. You can also email me at ctd119@humboldt.edu
+    
+
+
