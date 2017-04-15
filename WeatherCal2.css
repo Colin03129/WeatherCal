@@ -13,7 +13,7 @@ img {
 table {
     border-collapse: collapse;
     position: fixed;
-    right: 8px;
+    left: 8px;
     top: 8px;
     z-index: 2;
     background: rgba(0, 0, 0, 0.65);
@@ -23,7 +23,6 @@ table {
 th, td {
     text-align: center;
     padding: 0;
-    padding-left: 1px;
 }
 
 #Rain{
