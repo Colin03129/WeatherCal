@@ -73,7 +73,7 @@ Additional Optional Steps:
     1. Open WeatherCal.css in the TextEdit application.
     2. The third line after "table {" should say "right: 8px;". Change the "right" to "left". Save the file.
 
-Troubleshooting:
+## Troubleshooting
   1. If you do not see the background/calendar appearing on your background, try opening the html page into a web browser such as Safari or Chrome. You should do this by copy-pasting the URL from the geeklet directly into your browser. If your browser displays the background, move to step 2. If it does not, move to step 3.
   2.
     a) Double check that your geeklet settings are the same as the settings in this readme.
@@ -87,7 +87,7 @@ Troubleshooting:
     d) Run WeatherCalMain.scpt with the log enabled and look for any errors in the log. Note that the refresh rate of WeatherCalMain.scpt is not the same as the shell geeklet. If you want the HTML page to update instantly, run WeatherCalHTMLconstructor.scpt instead of WeatherCalMain.scpt and open the HTML file in a web browser.
     e) If you still have issues, see my contact info below
 
-Contact Info:
+## Contact Info:
 The best way to contact me is through reddit at /u/Colin03129. You can either comment on this post: https://np.reddit.com/r/GeekTool/comments/65kx28/finished_my_backgroundchanging_weathercalendar/ or send me a message directly. You can also email me at ctd119@humboldt.edu
     
 
