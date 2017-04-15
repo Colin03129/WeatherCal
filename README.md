@@ -63,7 +63,7 @@ BackgroundWeatherChange.scpt
 10. If you have an issue with the setup, see troubleshooting below.
 11. If you think the setup instructions should be altered or are missing some explanation, see contact information at the end of troubleshooting below.
 
-Additional Optional Steps:
+Additional Optional Steps:  
   --If you do not want weather-based background and would rather have your own backgrounds:  
     1. Open WeatherCalHTMLconstructor.scpt in the Script Editor application.  
     2. Search for "Background to true". Read the notes next to each of the declarations and change whichever one to "false"  
