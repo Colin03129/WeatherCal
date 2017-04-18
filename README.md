@@ -53,9 +53,9 @@ BackgroundWeatherChange.scpt
 ## Setup
 1. Download this repository as a zip file into your documents folder. Double-click the zip file to extract the contents.
 2. Rename the new folder "WeatherCal-master" to "GeekTool". If you already have a folder in documents called "GeekTool", move all the contents of "WeatherCal-master" into the "GeekTool" folder.
-3. Install GeekTool from https://www.tynsoe.org/v2/geektool/ if you don't have it already
-4. Install JSON Helper from http://www.mousedown.net/mouseware/JSONHelper.html if you don't have it already
-5. Get a free Weather Underground API key from https://www.wunderground.com/weather/api/d/pricing.html if you don't have one already
+3. Install GeekTool from https://www.tynsoe.org/v2/geektool/ if you don't have it already. You can download it directly from this website.
+4. Install JSON Helper from http://www.mousedown.net/mouseware/JSONHelper.html if you don't have it already. You can download it from the App Store.
+5. Get a free Weather Underground API key from https://www.wunderground.com/weather/api/d/pricing.html if you don't have one already. You will have to make an account on weather underground. You should choose the "Anvil" plan so that you have access to all of the api functionallity.
 6. Open WeatherChange.scpt in the Script Editor application. Search for "set WURL to" in the script. In between "api/" and "/hourly10day" replace the placeholder text with your api key. At the end of the same line, replace "KCAARCAT10" with the weather underground station id for your local station. The id should be at the end of the URL of your local station. Not all stations have this id.
 7. Setup a shell geeklet that runs WeatherCalMain.scpt. See the above portion on the script to see the setup for the geeklet. You can move this geeklet so that the top (and the return message) will not be visible on the screen.
 8. Setup a html geeklet that displays the HTML page that is created. See the above portion on WeatherCalHTMLconstructor.scpt to see the setup for the geeklet.
