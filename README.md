@@ -1,11 +1,22 @@
 # WeatherCal
-Weather and Calendar based dynamic background
-Current Version is 2.0
+Weather and Calendar based dynamic background  
+Current Version is 3.0  
 Check the readme.md in your download of this repository to see if you have the latest version
 
-This dynamic desktop background is reliant on GeekTool, JSON Helper, Weather Underground API, and a couple AppleScripts. This is my first time using all of these so please point out poor code so that I can improve.
+This dynamic desktop background is reliant on GeekTool, JSON Helper, Weather Underground API, and a couple AppleScripts. This is my first time using all of these so please point out poor code so that I can improve. Example album: http://imgur.com/a/xnybK  
 
-The original functional version 1.0 of the code used WeatherChange.scpt, CalendarEventsPull.scpt, WeatherCalHTMLConstructor.scpt, CreateEventArchive.scpt, and BackgroundWeatherChange.scpt. These 5 scripts are all run within a GeekTool Group called Base_Group at different frequencies.
+![WeatherCal Example Image](http://i.imgur.com/ehcxfF7.jpg "WeatherCal Example")
+
+If you would like to donate, please become a patron at https://www.patreon.com/Colin03129  
+
+Version 3.0 uses WeatherCalMain.scpt to run the other scripts: WeatherChange.scpt, CalendarEventsPull.scpt, and WeatherCalHTMLConstructor.scpt  
+If you are Updating to Version 3.0, you will need to reinstall WeatherChange.scpt, CalendarEventsPull.scpt, and WeatherCalHTMLConstructor.scpt. You will have to reenter your api code into WeatherChange.scpt (see step 6 in the setup).  
+Changes include:  
+  --Addition of 20 new weather columns to choose from  
+  --Fixed error ending multiple ongoing events ending at different times  
+  --Fixed start and end times of events not having the date attached to them  
+  --Fixed two end of day lines displaying if there were multiple events at the 23h  
+  --Improved checks for dates of events starting before weather lines begin  
 
 Version 2.0 uses WeatherCalMain.scpt to run the other scripts: WeatherChange.scpt, CalendarEventsPull.scpt, and WeatherCalHTMLConstructor.scpt  
 Changes include:  
@@ -15,6 +26,7 @@ Changes include:
   --Updated css to make the background and calendar look nicer and display on all backgrounds instead of only 1  
   --BackgroundWeatherChange.scpt is now obselete  
 
+The original functional version 1.0 of the code used WeatherChange.scpt, CalendarEventsPull.scpt, WeatherCalHTMLConstructor.scpt, CreateEventArchive.scpt, and BackgroundWeatherChange.scpt. These 5 scripts are all run within a GeekTool Group called Base_Group at different frequencies.
 
 CreateEventArchive.scpt  
   --Creates an archive of all recurring events by transfering events from their original calendars into a calendar named "Archive" so that old events would not have to be parsed through by CalendarEventsPull.scpt when it runs, thus somewhat improving speed. In the future, the script should be triggered by an event with summary of "Archive Calendars" in any calendar.
