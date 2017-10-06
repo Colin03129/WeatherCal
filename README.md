@@ -42,7 +42,7 @@ WeatherChange.scpt
   
 WeatherCalHTMLconstructor.scpt  
   --Creates an HTML page with a table containing columns for the hour, event, temperature, and probability of precipitation. Uses the text files created by CalendarEventsPull.scpt and WeatherChange.scpt to complete the cells. The formatting for the HTML file is done by WeatherCal.css or WeatherCal2.css. The settings for the html geeklet that displays the constructed html page are as follows:  
-    --URL: file:///Users/<YOURUSERNAME>/Documents/GeekTool/calWeatherInfo.html  
+    --URL: file:///Users/*"YOURUSERNAME"*/Documents/GeekTool/calWeatherInfo.html  
     --Refresh text box: 60  
     --Zoom: 84   You can change this to whatever you want. The HTML will adjust accordingly  
     --Stretch the html geeklet so that it covers the entire screen by dragging the bottom right corner  
