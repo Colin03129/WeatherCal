@@ -51,8 +51,8 @@ WeatherCalHTMLconstructor.scpt
   
   
 WeatherCalMain.scpt
-  --This is the script that is run by the shell geeklet. It is set to run every 30 minutes and within 30 seconds of the computer turning on. The settings for the geeklet are as follows:  
-    --Command text box: osascript "/Users/<YOURUSERNAME>/documents/GeekTool/WeatherCalMain.scpt"  
+  --This is the script that is run by the shell geeklet. It is set to run every 30 minutes and within 30 seconds of the computer turning on. Make sure to add your username after /Users/ The settings for the geeklet are as follows:  
+    --Command text box: osascript "/Users/*"YOURUSERNAME"*/documents/GeekTool/WeatherCalMain.scpt"  
     --Refresh text box: 60  
     --Timeout text box: 120  
   
